@@ -148,73 +148,46 @@ const validateEmail = (email)=>{
         setLoading(true);
 
 
+try {
 
+    const response = await fetch(
+        "https://dummyjson.com/users"
+    );
 
+    const data = await response.json();
 
-        try{
+    const user = data.users.find(
+        (user) =>
+            user.email.toLowerCase() === email.toLowerCase()
+    );
 
-            const response = await fetch(
-                "https://dummyjson.com/auth/login",
-                {
-                    method:"POST",
-                    headers:{
-                        "Content-Type":"application/json"
-                    },
-                    body:JSON.stringify({
-                        username:"emilys",
-                        password:"emilyspass"
-                    })
+    if (user) {
 
+        console.log("User Found:", user);
 
-                }
-            );
-            const data = await response.json();
-            if(response.ok){
-                console.log(
-                    "API DATA:",
-                    data
-                );
-                setSuccess(
-                    "Email verified successfully"
-                );
-                setTimeout(()=>{
-                    navigate("/VerifyEmail");
-                },1500);
-            }
-            else{
-                setError(
-                    "Something went wrong"
-                );
-            }
-        }
+        setSuccess("Email verified successfully");
 
-      catch(error){
+        setTimeout(() => {
+            navigate("/VerifyEmail");
+        }, 1500);
+
+    } else {
+
+        setError("Email not found");
+
+    }
+
+} catch (error) {
 
     console.log(error);
 
-    setError(
-        "Server error. Try again later"
-    );
+    setError("Server error. Try again later");
 
+} finally {
+
+    setLoading(false);
 }
-
-
-
-        finally{
-
-
-            setLoading(false);
-
-
-        }
-
-
-
-    };
-
-
-
-
+};
 
 
     return (
