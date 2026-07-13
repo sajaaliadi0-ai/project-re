@@ -1,0 +1,1104 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fb;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    color:#333;
+}
+
+
+
+/* =========================
+   AUTH CONTAINER
+========================= */
+
+.auth-container{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    position:relative;
+}
+
+
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+.theme-toggle{
+
+    position:absolute;
+
+    top:25px;
+    right:25px;
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:#6C63FF;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+
+.theme-toggle:hover{
+
+    transform:rotate(20deg);
+
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+.auth-card{
+
+    width:100%;
+    max-width:430px;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    animation:fadeIn .6s ease;
+}
+
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+    width:80px;
+    height:80px;
+
+    margin:0 auto 20px;
+
+    background:#6C63FF;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:34px;
+}
+
+
+
+/* =========================
+   TITLES
+========================= */
+
+.auth-card h1{
+
+    text-align:center;
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+
+.auth-card p{
+
+    color:#777;
+
+    line-height:1.6;
+
+}
+
+
+.subtitle{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:35px;
+}
+
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group{
+
+    margin-bottom:22px;
+
+    text-align:left;
+
+}
+
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+    font-size:14px;
+
+    text-align:left;
+}
+
+
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box{
+
+    position:relative;
+
+}
+
+
+.input-box input,
+.input-group input{
+
+    width:100%;
+
+    height:52px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    padding:0 45px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+
+
+.input-box input:focus,
+.input-group input:focus{
+
+    border-color:#6C63FF;
+
+    box-shadow:0 0 8px rgba(108,99,255,.2);
+
+}
+
+
+
+/* LEFT ICON */
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#888;
+
+}
+
+
+
+/* PASSWORD EYE */
+
+#togglePassword{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+/* =========================
+   OPTIONS
+========================= */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+
+.remember{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+.options a{
+
+    text-decoration:none;
+
+    color:#6C63FF;
+
+    font-weight:500;
+
+}
+
+
+.options a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn,
+.btn-primary{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#6C63FF;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover,
+.btn-primary:hover{
+
+    background:#574fd6;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.auth-card .btn-primary{
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:14px;
+
+}
+
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.bottom-text,
+.auth-footer{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#666;
+
+}
+
+
+.bottom-text a{
+
+    color:#6C63FF;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+.bottom-text a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* =========================
+   PASSWORD FIELD
+========================= */
+
+.password-field{
+
+    position:relative;
+
+    width:100%;
+
+}
+
+
+.password-field input{
+
+    width:100%;
+
+    padding:12px;
+
+    padding-right:45px;
+
+}
+
+
+
+.password-field button{
+
+    position:absolute;
+
+    right:10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error{
+
+    color:#ef4444;
+
+    font-size:12px;
+
+}
+
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* =========================
+   PASSWORD STRENGTH
+========================= */
+
+.password-strength{
+
+    width:100%;
+
+    height:8px;
+
+    background:#ddd;
+
+    border-radius:10px;
+
+    margin-top:10px;
+
+    overflow:hidden;
+
+}
+
+
+#strengthText{
+
+    font-size:13px;
+
+    margin-top:8px;
+
+}
+
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-message{
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#4CAF50;
+
+    color:white;
+
+    padding:18px 35px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    z-index:9999;
+
+    animation:popup .3s ease;
+
+}
+
+
+
+@keyframes popup{
+
+    from{
+
+        opacity:0;
+
+        transform:translate(-50%,-60%);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translate(-50%,-50%);
+
+    }
+
+}
+
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+
+    background:#121212;
+
+    color:#fff;
+
+}
+
+
+
+body.dark .auth-card{
+
+    background:#1f1f1f;
+
+}
+
+
+
+body.dark h1,
+body.dark label,
+body.dark .bottom-text,
+body.dark .subtitle{
+
+    color:#fff;
+
+}
+
+
+
+body.dark .input-box input,
+body.dark .input-group input{
+
+    background:#2d2d2d;
+
+    color:white;
+
+    border:1px solid #555;
+
+}
+
+
+
+body.dark .input-box input::placeholder{
+
+    color:#bdbdbd;
+
+}
+
+
+
+body.dark .input-box i,
+body.dark #togglePassword{
+
+    color:white;
+
+}
+
+
+
+body.dark .theme-toggle{
+
+    background:#2d2d2d;
+
+    color:#FFD54F;
+
+}
+
+
+
+body.dark .options a,
+body.dark .bottom-text a{
+
+    color:#8ab4ff;
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+
+    .auth-card{
+
+        padding:35px;
+
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .auth-card{
+
+        padding:25px;
+
+        border-radius:18px;
+
+    }
+
+
+
+    .auth-card h1{
+
+        font-size:25px;
+
+    }
+
+
+
+    .subtitle{
+
+        font-size:14px;
+
+    }
+
+
+
+    .options{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+
+
+    .theme-toggle{
+
+        top:15px;
+
+        right:15px;
+
+    }
+
+}
+
+/* =========================
+   VERIFY EMAIL
+========================= */
+
+
+.otp-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.otp-container input{
+
+    width:45px;
+
+    height:50px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    border:2px solid #6C63FF;
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+
+
+.otp-container input:focus{
+
+    border-color:#6C63FF;
+
+    box-shadow:0 0 8px rgba(108,99,255,.2);
+
+}
+
+
+
+/* =========================
+   VERIFY BUTTON
+========================= */
+
+
+#verifyBtn{
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#6C63FF;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+
+#verifyBtn:hover{
+
+    background:#574fd6;
+
+}
+
+
+
+/* =========================
+   SPINNER
+========================= */
+
+
+.spinner{
+
+    width:18px;
+
+    height:18px;
+
+    border:3px solid rgba(255,255,255,.4);
+
+    border-top-color:white;
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+/* =========================
+   RESEND LINK
+========================= */
+
+
+#resend{
+
+    color:#6C63FF;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+/* =========================
+   SUCCESS BOX
+========================= */
+
+
+.success-box{
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%) scale(.8);
+
+    width:350px;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+
+
+.success-box.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+
+
+.success-box h2{
+
+    margin-top:20px;
+
+}
+
+
+
+.success-box p{
+
+    color:#777;
+
+    margin-top:10px;
+
+}
+
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+
+.success-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#22C55E;
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* =========================
+   DARK MODE SUCCESS
+========================= */
+
+
+body.dark .success-box{
+
+    background:#1f1f1f;
+
+}
+
+
+
+body.dark .success-box p{
+
+    color:#ccc;
+
+}
+
+
+
+/* =========================
+   MOBILE SUCCESS
+========================= */
+
+
+@media(max-width:480px){
+
+    .success-box{
+
+        width:90%;
+
+        padding:25px;
+
+    }
+
+
+    .otp-container{
+
+        gap:8px;
+
+    }
+
+
+    .otp-container input{
+
+        width:40px;
+
+        height:45px;
+
+    }
+
+    .auth-container.dark {
+    background: #111827;
+}
+
+.auth-container.dark .auth-card {
+    background: #1f2937;
+    color: white;
+}
+
+.auth-container.dark input {
+    background: #374151;
+    color: white;
+}
+
+.auth-container.dark label,
+.auth-container.dark p,
+.auth-container.dark h1 {
+    color: white;
+}
+
+}
