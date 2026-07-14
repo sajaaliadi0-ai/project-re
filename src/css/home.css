@@ -1064,3 +1064,25 @@ body,
 
 }
 
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logout-btn{
+    padding:10px 20px;
+    border:none;
+    border-radius:30px;
+    background:#8b4e1d;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.logout-btn:hover{
+    background:#60310f;
+    transform:translateY(-2px);
+}
+
