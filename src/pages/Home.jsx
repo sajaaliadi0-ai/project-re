@@ -1,5 +1,6 @@
 import "../css/home.css";
 import "../css/responsive.css";
+import { useNavigate } from "react-router-dom";
 
 import { useState, useEffect } from "react";
 
@@ -21,7 +22,14 @@ function Home() {
 
 const [posts,setPosts] = useState([]);
 const [loading,setLoading] = useState(true);
+const navigate = useNavigate();
 
+function logout() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+
+    navigate("/login");
+}
 useEffect(()=>{
 
     fetch("https://dummyjson.com/products")
@@ -91,7 +99,23 @@ return (
 
 <header>
 
+<div className="header-actions">
 
+<button
+className="theme-toggle"
+onClick={() => setDarkMode(!darkMode)}
+>
+    {darkMode ? "☀️ Light" : "🌙 Dark"}
+</button>
+
+<button
+className="logout-btn"
+onClick={logout}
+>
+    Logout
+</button>
+
+</div>
 <div className="home-logo">
 
 
