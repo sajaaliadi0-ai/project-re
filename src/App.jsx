@@ -6,7 +6,8 @@ import VerifyEmail from "./pages/VerifyEmail";
 import Register from "./pages/Register";
 import Success from "./pages/Success";
 import ResetPassword from "./pages/ResetPassword";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
+
 
 function App() {
 
@@ -16,9 +17,7 @@ function App() {
 
       <Routes>
 
-
         {/* Default Page */}
-
         <Route 
           path="/" 
           element={<Navigate to="/login" />} 
@@ -26,47 +25,52 @@ function App() {
 
 
         {/* Login */}
-
         <Route 
           path="/login" 
           element={<Login />} 
         />
 
-{/* Register */}
 
+        {/* Register */}
         <Route 
-          path="/Register" 
+          path="/register" 
           element={<Register />} 
         />
 
-        {/* Forgot Password */}
 
+        {/* Forgot Password */}
         <Route 
-          path="/ForgotPassword" 
+          path="/forgot-password" 
           element={<ForgotPassword />} 
         />
 
 
+        {/* Reset Password */}
         <Route 
-          path="/ResetPassword" 
+          path="/reset-password" 
           element={<ResetPassword />} 
         />
-        {/* Verify Email */}
 
+
+        {/* Verify Email */}
         <Route 
-          path="/VerifyEmail" 
+          path="/verify-email" 
           element={<VerifyEmail />} 
         />
 
-  <Route 
-          path="/Success" 
+
+        {/* Success */}
+        <Route 
+          path="/success" 
           element={<Success />} 
         />
-<Route 
-          path="/Home" 
+
+
+        {/* Home */}
+        <Route 
+          path="/home" 
           element={<Home />} 
         />
-
 
       </Routes>
 
