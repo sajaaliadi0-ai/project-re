@@ -251,38 +251,50 @@ color: black;
 
 
 /* LEFT ICON */
+.input-box > i:first-child{
 
-.input-box i:first-child{
+position:absolute;
 
-    position:absolute;
+left:18px;
 
-    left:18px;
+top:50%;
 
-    top:50%;
+transform:translateY(-50%);
 
-    transform:translateY(-50%);
-
-    color:#888;
+color:#999;
 
 }
-
-
-
 /* PASSWORD EYE */
 
-#togglePassword{
+.password-toggle{
 
-    position:absolute;
+position:absolute;
 
-    right:18px;
+right:15px;
 
-    top:50%;
+top:50%;
 
-    transform:translateY(-50%);
+transform:translateY(-50%);
 
-    cursor:pointer;
+width:30px;
 
-    color:#777;
+height:30px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border:none;
+
+background:none;
+
+cursor:pointer;
+
+color:#777;
+
+z-index:2;
 
 }
 /* =========================

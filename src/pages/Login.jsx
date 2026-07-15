@@ -186,7 +186,7 @@ const [darkMode, setDarkMode] = useState(() => {
 
   };
     return (
-
+<div className="auth-page">
     <div className="auth-container">
 
       {/* Theme Toggle */}
@@ -405,7 +405,7 @@ const [darkMode, setDarkMode] = useState(() => {
 
 
     </div>
-
+</div>
   );
 
 

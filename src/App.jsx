@@ -40,21 +40,21 @@ function App() {
 
         {/* Forgot Password */}
         <Route 
-          path="/forgot-password" 
+          path="/ForgotPassword" 
           element={<ForgotPassword />} 
         />
 
 
         {/* Reset Password */}
         <Route 
-          path="/reset-password" 
+          path="/ResetPassword" 
           element={<ResetPassword />} 
         />
 
 
         {/* Verify Email */}
         <Route 
-          path="/verify-email" 
+          path="/VerifyEmail" 
           element={<VerifyEmail />} 
         />
 

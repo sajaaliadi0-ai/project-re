@@ -1,16 +1,44 @@
 @media(max-width:600px){
 
 
-    .auth-card{
+.auth-card{
 
 
-        width:90%;
+padding:30px 20px;
 
 
-        padding:25px;
+}
 
 
-    }
+.auth-card h1{
+
+
+font-size:26px;
+
+
+}
+
+
+.options{
+
+
+flex-direction:column;
+
+gap:15px;
+
+
+}
+
+
+.logo{
+
+
+width:75px;
+
+height:75px;
+
+
+}
 
 
 }
