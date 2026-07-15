@@ -1,0 +1,18 @@
+{
+    "dashboard": "Post Dashboard",
+    "light": "Light",
+    "dark": "Dark",
+    "logout": "Logout",
+    "search": "Search Posts...",
+    "allUsers": "All Users",
+    "user": "User",
+    "totalPosts": "Total Posts",
+    "selectedUser": "Selected User",
+    "results": "Results",
+    "posts": "Posts",
+    "favorites": "Favorites",
+    "analytics": "Analytics",
+    "noFavorites": "No Favorites Yet",
+    "loading": "Loading...",
+    "language": "العربية"
+}

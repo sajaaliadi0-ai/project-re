@@ -3,9 +3,10 @@ import "../../css/responsive.css";
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 function Home() {
-
+const {t}=useTranslation();
     const navigate = useNavigate();
 
     const [darkMode, setDarkMode] = useState(
@@ -93,7 +94,28 @@ function Home() {
 
     }
 
+function changeLanguage(){
 
+    const newLang =
+    i18n.language === "en"
+    ? "ar"
+    : "en";
+
+
+    i18n.changeLanguage(newLang);
+
+    localStorage.setItem(
+        "lang",
+        newLang
+    );
+
+
+    document.documentElement.dir =
+    newLang === "ar"
+    ? "rtl"
+    : "ltr";
+
+}
 
     return (
 
@@ -114,7 +136,7 @@ function Home() {
 
                     <h2 className="logos">
 
-                        📋 Post Dashboard
+📋 {t("dashboard")}
 
                     </h2>
 
@@ -139,15 +161,21 @@ function Home() {
 
                     </button>
 
+<button
+className="language-btn"
+onClick={changeLanguage}
+>
 
+🌐 {t("language")}
+
+</button>
 
                     <button
                         className="logout-btn"
                         onClick={logout}
                     >
 
-                        Logout
-
+{t("logout")}
                     </button>
 
                 </div>
@@ -174,8 +202,7 @@ function Home() {
 
                         }}
                     >
-                        🏠 Dashboard
-                    </button>
+🏠 {t("dashboard")}                    </button>
 
 
 
@@ -187,8 +214,7 @@ function Home() {
 
                         }}
                     >
-                        📝 Posts
-                    </button>
+📝 {t("posts")}                    </button>
 
 
 
@@ -200,8 +226,7 @@ function Home() {
 
                         }}
                     >
-                        ❤️ Favorites
-                    </button>
+❤️ {t("favorites")}                    </button>
 
 
 
@@ -213,8 +238,7 @@ function Home() {
 
                         }}
                     >
-                        📊 Analytics
-                    </button>
+📊 {t("analytics")}                    </button>
 
                 </aside>
 
@@ -226,8 +250,7 @@ function Home() {
 
                         <input
                             type="text"
-                            placeholder="Search Posts..."
-                            value={search}
+placeholder={t("search")}                            value={search}
                             onChange={(e) =>
                                 setSearch(
                                     e.target.value
@@ -358,8 +381,7 @@ function Home() {
                                         ?
 
                                         <h2>
-                                            Loading...
-                                        </h2>
+{t("loading")}                                        </h2>
 
                                         :
 

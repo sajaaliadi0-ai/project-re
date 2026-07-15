@@ -1,0 +1,18 @@
+{
+    "dashboard": "لوحة المنشورات",
+    "light": "فاتح",
+    "dark": "داكن",
+    "logout": "تسجيل الخروج",
+    "search": "ابحث عن منشور...",
+    "allUsers": "كل المستخدمين",
+    "user": "المستخدم",
+    "totalPosts": "عدد المنشورات",
+    "selectedUser": "المستخدم المختار",
+    "results": "النتائج",
+    "posts": "المنشورات",
+    "favorites": "المفضلة",
+    "analytics": "التحليلات",
+    "noFavorites": "لا يوجد مفضلة حاليا",
+    "loading": "جاري التحميل...",
+    "language": "English"
+}
